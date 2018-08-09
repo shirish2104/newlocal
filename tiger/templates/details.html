@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>details</title>
+</head>
+<body>
+<h1>.....LIST.....</h1>
+<table border="1">
+{% for x in k %}
+<tr><td>{{x.name}}<br></td><td>{{x.num}}<br></td></tr>
+{% endfor %}
+</table>
+<br>
+<p>To get information about the person click on below name : </p>
+<table border="1" >
+{% for x in k %}
+<tr><td><a href="{{x.id}}">{{x.name}}</a></td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
